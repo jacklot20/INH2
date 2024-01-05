@@ -1,0 +1,20 @@
+body{ 
+	font-size: 4em;
+	background-color: white
+}
+
+.rgb{
+	color: rgb{100%, 40%, 10%);
+}
+
+.rgba{
+	color: rbga (100%, 40%, 10%, .5);
+}	
+
+.hsl{
+	 color: hsl(37, 100%, 50%);
+}
+
+.hsla{
+	 color: hsl(37, 100%, 50%,.5);
+}
