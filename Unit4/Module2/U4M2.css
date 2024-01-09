@@ -1,0 +1,25 @@
+body{ 
+	font-size: 4em;
+	background-color: #c954f0
+}
+
+.menu{
+	color: #fcfcfc;
+	accent-color: rgb(0, 0, 255);
+	align-self: center;
+}
+
+.title{
+	color: #fcfcfc;
+	align-self: center;
+}
+
+.subheading{
+	color: #fcfcfc;
+	align-items: center;
+}
+
+.text{
+	color: #fcfcfc;
+	align-self: center;
+}
