@@ -1,25 +1,28 @@
 body{ 
 	font-size: 4em;
-	background-color: #c954f0
+	background: #c954f0
 }
 
 .menu{
-	color: #fcfcfc;
-	accent-color: rgb(0, 0, 255);
-	align-self: center;
+	color: #000000;
+	background-color: #fff700;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 12px;
+	text-align: center;
 }
 
 .title{
 	color: #fcfcfc;
-	align-self: center;
+	text-align: center;
 }
 
 .subheading{
 	color: #fcfcfc;
-	align-items: center;
+	text-align: center;
 }
 
 .text{
 	color: #fcfcfc;
-	align-self: center;
+	text-align: center;
 }
