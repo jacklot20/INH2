@@ -4,11 +4,11 @@ body{
 }
 
 .rgb{
-	color: rgb{100%, 40%, 10%);
+	color: rgb(100%,40%,10%);
 }
 
 .rgba{
-	color: rbga (100%, 40%, 10%, .5);
+	color: rgba(100%, 40%, 10%, .5);
 }	
 
 .hsl{
