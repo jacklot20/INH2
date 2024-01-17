@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relational Selectors</title>
+    <style>
+        /* Descendant selector */
+        section p {
+            color: blue;
+        }
+
+        /* Adjacent sibling selector */
+        h1 + p {
+            font-weight: bold;
+        }
+
+        /* Child selector */
+        section > p {
+            border: 1px solid black;
+        }
+
+        /* General sibling selector */
+        h1 ~ p {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Heading 1</h1>
+        <p>Paragraph 1 (Descendant of section, Adjacent sibling of H1, Child of section, General sibling of H1)</p>
+        <p>Paragraph 2 (Descendant of section, Child of section, General sibling of H1)</p>
+        <div>
+            <p>Paragraph 3 (Descendant of section, Inside a div)</p>
+        </div>
+    </section>
+    <h1>Another Heading 1</h1>
+    <p>Paragraph 4 (Adjacent sibling of H1, General sibling of H1)</p>
+    <p>Paragraph 5 (General sibling of H1)</p>
+</body>
+</html>
