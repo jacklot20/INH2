@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: black; 
+    font-family: monospace;
+    color: white; 
+    text-align: center;
+}
+
+
+x {
+    font-size: 29px;
+}
+
+
+x.blue { color: #1F75FE; }
+x.yellow { color: #FCE83A; }
+x.black { color: #000000; }
+x.green { color: #1CAC78; }
+x.red { color: #EE204D; }
+
+#ringStart { color: #1F75FE; }
+
+
+row x:last-child { font-weight: bold; }
+
+
+x.blue.bold { color: #1F75FE; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<row>
+    <x id="ringStart">x</x><x class="blue">x</x><x class="blue.bold">x</x><x>x</x><x class="black">x</x><x class="black">x</x><x class="black">x</x><x>x</x><x class="red">x</x><x class="red">x</x><x class="red">x</x>
+</row>
+<row>
+    <x class="blue">x</x><x>x</x><x class="blue">x</x><x>x</x><x class="black">x</x><x>x</x><x class="black">x</x><x>x</x><x class="red">x</x><x>x</x><x class="red">x</x>
+</row>
+<row>
+    <x>x</x><x class="yellow">x</x><x class="yellow">x</x><x class="yellow">x</x><x>x</x><x class="green">x</x><x class="green">x</x><x class="green">x</x><x>x</x>
+</row>
+<row>
+    <x>x</x><x class="yellow">x</x><x>x</x><x class="yellow">x</x><x>x</x><x class="green">x</x><x>x</x><x class="green">x</x><x>x</x>
+</row>
+
+</body>
+</html>
