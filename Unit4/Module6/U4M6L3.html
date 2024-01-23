@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jack in Advanced Styles</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .name {
+        margin: 20px 0;
+        transition: all 0.3s ease;
+    }
+    .name:hover {
+        transform: scale(1.1);
+    }
+    .shadow {
+        text-shadow: 2px 2px 2px #000000;
+    }
+    .bordered {
+        border-bottom: 2px solid #000000;
+    }
+    .gradient {
+        background: linear-gradient(to right, #ff9966, #ff5e62);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .reflect {
+        display: inline-block;
+        transform: scaleX(-1);
+    }
+    .rotate {
+        display: inline-block;
+        transform: rotate(30deg);
+    }
+    .blur {
+        filter: blur(2px);
+    }
+    .light {
+        font-weight: 100;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .italic {
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+    <div class="name shadow">Jack</div>
+    <div class="name bordered">Jack</div>
+    <div class="name gradient">Jack</div>
+    <div class="name reflect">Jack</div>
+    <div class="name rotate">Jack</div>
+    <div class="name blur">Jack</div>
+    <div class="name light">Jack</div>
+    <div class="name bold">Jack</div>
+    <div class="name italic">Jack</div>
+    <div class="name" style="font-size: larger; color: #0088cc;">Jack</div>
+</body>
+</html>
