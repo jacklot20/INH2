@@ -1,7 +1,33 @@
 
-updated_html_content = html_content.replace(
-    ".absolute {",
-    """.absolute {
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Positioning</title>
+    <link rel="stylesheet" type="text/css">
+	<style>
+	
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.relative-images {
+    position: relative;
+}
+.relative {
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+}
+.absolute-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.absolute {
     position: absolute;
     max-width: 100px;
     max-height: 100px;
@@ -25,13 +51,41 @@ updated_html_content = html_content.replace(
     top: 140px;
     left: 200px;
 }
-"""
-)
 
-# Save the modified content to a new file
-new_file_path = '/mnt/data/Unit5_Collage.html'
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+}
+</style>
+</head>
+<body>
+    <!-- Relative Positioned Images -->
+    <div class="relative-images">
+        <img src="placeholder1.jpg" class="relative" style="top: 10px; left: 20px;">
+        <img src="placeholder2.jpg" class="relative" style="top: 30px; left: 40px;">
+          <img src="placeholder3.jpg" class="relative" style="top: 50px; left: 60px;">
+		    <img src="placeholder4.jpg" class="relative" style="top: 70px; left: 80px;">
+			  <img src="placeholder5.jpg" class="relative" style="top: 90px; left: 100px;">
+			    <img src="placeholder6.jpg" class="relative" style="top: 110px; left: 120px;">
+				  <img src="placeholder7.jpg" class="relative" style="top: 130px; left: 140px;">
+				    <img src="placeholder8.jpg" class="relative" style="top: 150px; left: 160px;">
+					  <img src="placeholder9.jpg" class="relative" style="top: 170px; left: 180px;">
+		    <img src="placeholder10.jpg" class="relative" style="top: 190px; left: 200px;">
+    </div>
 
-with open(new_file_path, 'w') as new_file:
-    new_file.write(updated_html_content)
-
-new_file_path
+    <!-- Absolute Positioned Images -->
+    <div class="absolute-images">
+        <img src="placeholder1.jpg" class="absolute" style="top: 10px; left: 20px;">
+        <img src="placeholder2.jpg" class="absolute" style="top: 30px; left: 40px;">
+          <img src="placeholder3.jpg" class="absolute" style="top: 50px; left: 60px;">
+		    <img src="placeholder4.jpg" class="absolute" style="top: 70px; left: 80px;">
+			  <img src="placeholder5.jpg" class="absolute" style="top: 90px; left: 100px;">
+			    <img src="placeholder6.jpg" class="absolute" style="top: 110px; left: 120px;">
+				  <img src="placeholder7.jpg" class="absolute" style="top: 130px; left: 140px;">
+				    <img src="placeholder8.jpg" class="absolute" style="top: 150px; left: 160px;">
+					  <img src="placeholder9.jpg" class="absolute" style="top: 170px; left: 180px;">
+		    <img src="placeholder10.jpg" class="absolute" style="top: 190px; left: 200px;">
+    </div>
+</body>
+</html>
