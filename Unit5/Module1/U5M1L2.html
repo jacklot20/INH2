@@ -1,0 +1,37 @@
+
+updated_html_content = html_content.replace(
+    ".absolute {",
+    """.absolute {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+}
+
+/* Overlapping images by adjusting top and left values */
+#image1 {
+    top: 20px;
+    left: 20px;
+}
+#image2 {
+    top: 60px;
+    left: 80px;
+}
+#image3 {
+    top: 100px;
+    left: 140px;
+}
+#image4 {
+    top: 140px;
+    left: 200px;
+}
+"""
+)
+
+# Save the modified content to a new file
+new_file_path = '/mnt/data/Unit5_Collage.html'
+
+with open(new_file_path, 'w') as new_file:
+    new_file.write(updated_html_content)
+
+new_file_path
