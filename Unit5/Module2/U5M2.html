@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document Navigation</title>
+<style>
+  /* Your provided CSS */
+  div#nav ul {
+    padding: 0;
+    margin: 0;
+    background-color: #ebebeb;
+  }
+
+  div#nav ul li {
+    float: left;
+    list-style: none;
+    padding: 0;
+  }
+
+  div#nav ul li a {
+    padding: 7px 15px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-right: 2px solid #cfcfcf;
+  }
+
+  div#nav ul ul {
+    position: absolute;
+    left: -999em;
+  }
+
+  div#nav ul li:hover ul,
+  div#nav ul li.sfhover ul {
+    left: auto;
+  }
+
+  div#nav ul li ul li {
+    float: none;
+  }
+
+  div#nav ul li ul li a {
+    border-right: none;
+  }
+
+  div#nav ul li a:hover,
+  div#nav ul li:hover a,
+  div#nav ul li.sfhover a {
+    background-color: #FFF;
+  }
+
+  div#nav ul li:hover ul li a,
+  div#nav ul li.sfhover ul li a {
+    background-color: #ebebeb;
+  }
+
+  div#nav ul li:hover ul li a:hover,
+  div#nav ul li.sfhover ul li a:hover {
+    background-color: #FFF;
+  }
+
+  div#nav ul li.last a {
+    border-right: none;
+  }
+
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  .clearfix {
+    display: inline-block;
+  }
+
+  /* Hides from IE-Mac */
+  *html .clearfix {
+    height: 1%;
+  }
+
+  .clearfix {
+    display: block;
+  }
+  /* End hide from IE-Mac */
+
+  /* Fix for sticky IE hover */
+  div#nav ul li:hover, div#nav ul li.sfhover {
+    position: static;
+  } 
+</style>
+</head>
+<body>
+
+<div id="nav" class="clearfix">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="#">Unit 1</a>
+      <ul>
+        <li><a href="#">Assignment 1.1</a></li>
+        <li><a href="#">Assignment 1.2</a></li>
+        <!-- Add more assignments as needed -->
+      </ul>
+    </li>
+    <li>
+      <a href="#">Unit 2</a>
+      <ul>
+        <li><a href="#">Assignment 2.1</a></li>
+        <li><a href="#">Assignment 2.2</a></li>
+        <!-- Add more assignments as needed -->
+      </ul>
+    </li>
+    <!-- Repeat for more units -->
+  </ul>
+</div>
+
+<script>
+  // This script is for handling IE hover issues
+  var nav = document.getElementById('nav');
+  var lis = nav.getElementsByTagName('li');
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].onmouseover = function() {
+      this.className += " sfhover";
+    }
+    lis[i].onmouseout = function() {
+      this.className = this.className.replace(new RegExp(" sfhover\\b"), "");
+    }
+  }
+</script>
+
+</body>
+</html>
