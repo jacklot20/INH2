@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1, h2, h3 {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+.article-title {
+    cursor: pointer;
+}
+
+.article-content {
+    display: none;
+}
+
+h1 {
+    background-color: transparent;
+}
+
+h2 {
+    background-color: transparent;
+}
