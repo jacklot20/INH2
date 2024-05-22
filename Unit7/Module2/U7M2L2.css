@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+p.article-content {
+    display: none;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+ul.article-list {
+    display: none;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    list-style-type: none;
+}
+
+ul.article-list li {
+    padding: 10px 0;
+}
