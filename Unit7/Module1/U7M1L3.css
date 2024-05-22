@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #FFF; /* White */
+}
